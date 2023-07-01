@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .menu{
+        @apply text-white text-center my-1 font-semibold mx-3 py-1 cursor-pointer;
+    }
+    .btn{
+        @apply text-white px-3 py-1 font-semibold rounded-md 
+        bg-blue-900 hover:bg-blue-800 active:bg-blue-900;
+    }
+    .toggle{
+        @apply flex flex-col my-2 cursor-pointer;
+    }
+    .toggle span{
+        @apply w-6 h-1 rounded-md font-semibold bg-blue-200 my-[1px];
+    }
+    .hide{
+        @apply hidden;
+    }
+    .quote-sec{
+        @apply w-[70%] mx-auto my-10;
+    }
+    .quote{
+        @apply font-sans text-lg text-center sm:text-xl md:text-3xl;
+    }
+    .row-lg{
+        @apply flex flex-col justify-around lg:flex-row;
+    }
+    .row-md{
+        @apply flex flex-col justify-around md:flex-row;
+    }
+    .box{
+        @apply flex flex-col m-auto md:mx-3 my-3 md:my-3 shadow-lg w-[250px] md:w-[300px] bg-slate-100 border-[1px] border-blue-900 p-2 rounded-md;
+    }
+    .thumbnail-img{
+        @apply w-[98%] h-[150px] block mx-auto rounded-md;
+    }
+    .title-course  p{
+        @apply text-black p-2 font-semibold;
+    }
+    .title-course  span{
+        @apply text-black p-2 font-semibold;
+    }
+    .view-btn{
+        @apply bg-blue-800 active:bg-blue-400 text-blue-100 font-semibold mx-auto my-2 px-5 py-1 rounded-sm cursor-pointer;
+    }
+    .aboutus{
+        @apply block mx-8 my-5 sm:mx-20 sm:my-14;
+    }
+    .contact-field{
+        @apply block px-2 py-1 font-medium text-lg border-2 border-blue-600 rounded-sm outline-none mb-3 md:mb-0  w-[100%];
+    }
+    .article{
+        @apply flex flex-col lg:flex-row bg-slate-200  px-3 py-3 rounded-md cursor-pointer shadow-2xl my-5;
+    }
+}
